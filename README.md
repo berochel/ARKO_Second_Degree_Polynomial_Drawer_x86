@@ -1,0 +1,1 @@
+# ARKO_Second_Degree_Polynomial_Drawer_x86
