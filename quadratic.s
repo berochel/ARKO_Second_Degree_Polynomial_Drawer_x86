@@ -100,22 +100,21 @@ xaxisloop:
 	dec		r11
 	jg		xaxisloop
 
-;------------------------------------------------------------------------------
 
-;------------------------------------------------------------------------------
 ; Registers in this section:
-;  ----------------------------------------------------------------------------
-; | rax	| TEMPORARY REGISTER		| rbx |	(must be preserved)		|
-; | rcx	| X OFFSET IN BUFFER 		| rdx | (DESTROYED BY MUL)		|
-; | rbp	| (must be preserved)		| rsp |					|
-; | rsi	| (input)buffer width		| rdi | (input)buffer base address	|
-; | r8	| Y OFFSET IN BUFFER 		| r9  |	(moved from rdx)buffer height	|
-; | r10	| WRITE ADDRESS			| r11 |					|
-; | xmm0| (input)A			| xmm1| (input)B			|
-; | xmm2| (input)C			| xmm3| (input)S			|
-; | xmm4| X IN DOUBLE			| xmm5| Y IN DOUBLE			|
-; | xmm6| TEMPORARY REGISTER		| xmm7|	TEMPORARY REGISTER		|
-; | xmm8| TEMPORARY REGISTER		|
+;  ----------------------------------------------------------------------
+; | rax	| TEMPORARY REGISTER	| rbx |	(must be preserved)		|
+; | rcx	| X OFFSET IN BUFFER 	| rdx | (DESTROYED BY MUL)		|
+; | rbp	| (must be preserved)	| rsp |					|
+; | rsi	| (input)buffer width	| rdi | (input)buffer base address	|
+; | r8	| Y OFFSET IN BUFFER 	| r9  |	(moved from rdx)buffer height	|
+; | r10	| WRITE ADDRESS		| r11 |					|
+; | xmm0| (input)A		| xmm1| (input)B			|
+; | xmm2| (input)C		| xmm3| (input)S			|
+; | xmm4| X IN DOUBLE		| xmm5| Y IN DOUBLE			|
+; | xmm6| TEMPORARY REGISTER	| xmm7|	TEMPORARY REGISTER		|
+; | xmm8| TEMPORARY REGISTER	|
+;------------------------------------------------------------------------
 
 graph:
 	
